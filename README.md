@@ -6,7 +6,7 @@ gRPC-golang
 
 #### 安裝protobuf
 
-
+&nbsp;
 自行編譯protobuf
 
 ```sh
@@ -21,6 +21,7 @@ make check
 sudo make install
 ```
 
+&nbsp;
 
 編譯有問題可能需要安裝 autoconf automake libtool
 
@@ -28,6 +29,7 @@ sudo make install
 sudo apt-get install autoconf automake libtool
 ```
 
+&nbsp;
 
 或是直接下載編譯好的檔案
 [https://github.com/google/protobuf/releases](https://github.com/google/protobuf/releases)
@@ -37,6 +39,7 @@ sudo apt-get install autoconf automake libtool
 /usr/local/bin/
 ```
 
+&nbsp;
 
 include資料夾底下的檔案複製到
 
@@ -44,6 +47,7 @@ include資料夾底下的檔案複製到
 /usr/local/include/
 ```
 
+&nbsp;
 
 #### 下載protoc轉go的套件
 
@@ -51,6 +55,7 @@ include資料夾底下的檔案複製到
 go get -u github.com/golang/protobuf/protoc-gen-go
 ```
 
+&nbsp;
 
 #### 下載gRPC轉gateway的套件
 
@@ -59,6 +64,7 @@ go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
 ```
 
+&nbsp;
 
 #### proto編譯成go檔
 
