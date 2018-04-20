@@ -66,8 +66,17 @@ go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
 
 &nbsp;
 
-#### proto編譯成go檔
+#### proto編譯成grpc go檔
 
 ```sh
-protoc -I/usr/local/include -I. -I$GOPATH/src -I helloworld/ -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis helloworld/helloworld.proto --go_out=plugins=grpc:helloworld
+protoc -I/usr/local/include -I. -I$GOPATH/src -I helloworld/ -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis helloworld/helloworld.proto --go_out=plugins=grpc:.
 ```
+
+&nbsp;
+
+#### proto編譯成grpc gateway go檔
+
+```sh
+protoc -I/usr/local/include -I. -I$GOPATH/src -I helloworld/ -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis helloworld/helloworld.proto --grpc-gateway_out=logtostderr=true:.
+```
+
