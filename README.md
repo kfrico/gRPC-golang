@@ -49,6 +49,12 @@ include資料夾底下的檔案複製到
 
 &nbsp;
 
+#### 下載proto套件
+
+```sh
+go get -u github.com/golang/protobuf/proto
+```
+
 #### 下載protoc轉go的套件
 
 ```sh
